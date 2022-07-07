@@ -1,5 +1,9 @@
 const Add = () => {
-    return ( <></> );
+    return ( 
+        <div>
+            <p>Add</p>
+        </div>
+     );
 }
  
 export default Add;

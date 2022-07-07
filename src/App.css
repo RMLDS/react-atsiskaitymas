@@ -1,3 +1,13 @@
-.App {
-  text-align: center;
+.menuBar {
+  width: 90%;
+  padding: 15px 5%;
+  display: flex;
+  justify-content: space-between;
+  background-color: yellow;
+}
+
+.links {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
 }
