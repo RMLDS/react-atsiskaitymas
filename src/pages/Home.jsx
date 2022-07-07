@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+// import verifyToken from '../middleware/verifyToken.js';
 
 const Home = () => {
 
@@ -17,7 +18,9 @@ const Home = () => {
         <div>
             <p>Blogs</p>
             <br />
+            
             {
+
                 data.length !== 0 ? data.map((blog, i) => {
                     return <div key={i} className='blogEntry'><p>{blog.title}</p><p>{blog.description}</p><br /></div>
                 }) : <p>Loading...</p>

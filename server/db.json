@@ -23,6 +23,11 @@
       "email": "xoxoxo@xxx.com",
       "password": "$2b$10$rMzk2SN/oLHuAqHS5.E4WegaQqnc/3ePR6TiUl7SApX8eMAmq5aoi",
       "id": 2
+    },
+    {
+      "email": "xox@xox.com",
+      "password": "$2b$10$TKKsOxBw8EKDRpch.L5hzufW71/dJrTUR5f9/7c2aF2t3dUg9UUFu",
+      "id": 3
     }
   ]
 }
