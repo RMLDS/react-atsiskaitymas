@@ -1,16 +1,28 @@
 {
-    "blogs": [
-      {
-        "title": "xxx",
-        "description": "Some description",
-        "authorID": 1,
-        "id": 1
-      },
-      {
-        "title": "xxx - 2",
-        "description": "Some description - 2",
-        "authorID": 2,
-        "id": 2
-      }
-    ]
+  "blogs": [
+    {
+      "title": "xxx",
+      "description": "Some description",
+      "authorID": 1,
+      "id": 1
+    },
+    {
+      "title": "xxx - 2",
+      "description": "Some description - 2",
+      "authorID": 2,
+      "id": 2
+    }
+  ],
+  "users": [
+    {
+      "email": "xxx@xxx.com",
+      "password": "$2b$10$v.h8RaWMMlZIMPdxV5Uc4.d5Vu9VGv1ujf73u.veUtUNUB/yNHmWe",
+      "id": 1
+    },
+    {
+      "email": "xoxoxo@xxx.com",
+      "password": "$2b$10$rMzk2SN/oLHuAqHS5.E4WegaQqnc/3ePR6TiUl7SApX8eMAmq5aoi",
+      "id": 2
+    }
+  ]
 }
