@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 const Home = () => {
     const navigate = useNavigate();
     const token = localStorage.getItem('token');
-    const [data, setData] = useState([]);
+    const [data, setData] = useState(null);
 
     useEffect(() => {
         if (!token) return navigate('/login');
@@ -23,11 +23,12 @@ const Home = () => {
     return (
         <div>
             <p>Skills</p>
+            <br />
             <div className='blogs'>
                 {
-                    data.length !== 0 ? data.map((blog, i) => {
-                        return <div key={i} className='blogEntry'><p className='title' >{blog.title}</p><p>{blog.description}</p><br /></div>
-                    }) : data.length === 0 ? <p>All empty yo!</p> : <p>Loading...</p>
+                    data === null ? <p>Loading...</p> : (data.length !== 0 ? data.map((blog, i) => {
+                        return <div key={i} className='blogEntry'><p className='title' >{blog.title}</p><p>{blog.description}</p></div>
+                    }) : <p>All empty yo!</p>)
                 }
             </div>
         </div>
