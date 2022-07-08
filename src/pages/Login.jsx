@@ -21,6 +21,7 @@ const Login = () => {
                 if (res.err) return alert('Error! ' + res.err);
                 if (res.token) {
                     localStorage.setItem('token', res.token)
+                    alert(res.msg);
                     navigate('/');
                 };
             }
@@ -35,7 +36,6 @@ const Login = () => {
                 <input type="password" name='password' placeholder='password' required/>
                 <input type="submit" value="Login" />
             </form>
-
         </div>
     );
 }

@@ -24,13 +24,14 @@ const Home = () => {
 
     return (
         <div>
-            <p>Blogs</p>
-            <br />
-            {
-                data.length !== 0 ? data.map((blog, i) => {
-                    return <div key={i} className='blogEntry'><p>{blog.title}</p><p>{blog.description}</p><br /></div>
-                }) : data.length === 0 ? <p>All empty yo!</p> : <p>Loading...</p>
-            }
+            <p>Skills</p>
+            <div className='blogs'>
+                {
+                    data.length !== 0 ? data.map((blog, i) => {
+                        return <div key={i} className='blogEntry'><p className='title'>{blog.title}</p><p>{blog.description}</p><br /></div>
+                    }) : data.length === 0 ? <p>All empty yo!</p> : <p>Loading...</p>
+                }
+            </div>
         </div>
     );
 }

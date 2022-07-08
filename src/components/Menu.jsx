@@ -10,9 +10,11 @@ const Menu = () => {
 
     useEffect(() => {
         const token = localStorage.getItem('token');
-        token ? setLogin(true) : setLogin(false);
+        if (token) {
+            setLogin(true);
+            setUser(jwt(token).email);
+        } else {setLogin(false);}
         console.log("Location changed. Token =", token);
-        setUser(jwt(token).email);
     }, [location]
     );
 
