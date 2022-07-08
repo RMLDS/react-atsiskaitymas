@@ -1,7 +1,13 @@
+import { useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 
 const Add = () => {
     const navigate = useNavigate();
+    const token = localStorage.getItem('token');
+
+    useEffect(() => { 
+        if (!token) return navigate('/login');
+    }, [navigate, token]);
 
     const handleSubmit = (e) => {
         e.preventDefault();

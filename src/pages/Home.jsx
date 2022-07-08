@@ -1,9 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-// import verifyToken from '../middleware/verifyToken.js';
 
 const Home = () => {
-
     const navigate = useNavigate();
     const token = localStorage.getItem('token');
     const [data, setData] = useState([]);
@@ -28,7 +26,7 @@ const Home = () => {
             <div className='blogs'>
                 {
                     data.length !== 0 ? data.map((blog, i) => {
-                        return <div key={i} className='blogEntry'><p className='title'>{blog.title}</p><p>{blog.description}</p><br /></div>
+                        return <div key={i} className='blogEntry'><p className='title' >{blog.title}</p><p>{blog.description}</p><br /></div>
                     }) : data.length === 0 ? <p>All empty yo!</p> : <p>Loading...</p>
                 }
             </div>

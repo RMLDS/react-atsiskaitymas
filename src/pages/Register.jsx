@@ -28,7 +28,7 @@ const Register = () => {
                     alert('Registration successfull!');
                     navigate('/login');
                 } else {
-                    alert('Wrong data entered!');
+                    alert('Error ' + res.err);
                 }
             }
             );

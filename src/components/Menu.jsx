@@ -27,10 +27,10 @@ const Menu = () => {
                 {
                     loggedIn ? (<>
                         <p>Welcome {user}</p>
-                        <Link to="/">Home</Link>
+                        <Link to="/">Home</Link> /
                         <Link to="/add">Add</Link>
                     </>) : <>
-                        <Link to="/login">Login</Link>
+                        <Link to="/login">Login</Link> /
                         <Link to="/register">Register</Link>
                     </>
                 }
