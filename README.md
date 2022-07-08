@@ -4,7 +4,7 @@
 
 ## Paleidimas
 
-Nuėję į projekto direktoriją pirmiausia paleiskite duom. bazės serverį naudojant "npm run db" script'ą, tuomet naujame terminale paleiskite serverį, naudojant "npm run server" script'ą ir galiausiai paleiskite projektą naudojant "npm run start" tai darant taip pat naujame terminalo lange. Visų skriptų paleidimas yra aprašytas žemiau:
+Nuėję į projekto direktoriją paleiskite komandą "npm run start". Failuose yra ir alternatyvus kodas su alternatyviu duomenų serveriu, jo veikimui pirmiausia paleiskite duom. bazės serverį naudojant "npm run db" script'ą, tuomet naujame terminale paleiskite API serverį, naudojant "npm run server" script'ą ir galiausiai pakoregavus kodą pagrindiniuose projekto failuose, paleiskite projektą naudojant "npm run start" tai darant taip pat naujame terminalo lange. Visų skriptų paleidimas yra aprašytas žemiau:
 
 #### `npm run db`
 

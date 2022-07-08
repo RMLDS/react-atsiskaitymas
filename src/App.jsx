@@ -7,8 +7,8 @@ import Menu from './components/Menu';
 import Register from './pages/Register';
 import { Routes, Route } from "react-router-dom";
 
-
 function App() {
+
   return (
     <>
       <Menu />
